@@ -1,5 +1,5 @@
 import { StartButton } from "./startbutton"
-import { SystemTray } from "./systemtray"
+import { SystemTray } from "./systemtray" // client component
 
 export const Taskbar = () =>
 {

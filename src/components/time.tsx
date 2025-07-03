@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-export const Time = () => {
+const Time = () => {
   const [time, setTime] = useState<Date>(new Date());
 
   useEffect(() => {
@@ -18,3 +18,5 @@ export const Time = () => {
     </time>
   );
 };
+
+export default Time;
