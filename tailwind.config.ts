@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   content: [
@@ -9,7 +10,19 @@ const config: Config = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        '.image-rendering-pixelated': {
+          imageRendering: 'pixelated',
+          '-ms-interpolation-mode': 'nearest-neighbor',
+        },
+        '.image-rendering-crisp': {
+          imageRendering: 'crisp-edges',
+        },
+      });
+    }),
+  ],
 };
 
 export default config;
