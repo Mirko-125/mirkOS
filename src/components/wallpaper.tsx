@@ -30,8 +30,7 @@ export const Wallpaper = ({ background = "#1a4988" }: WallpaperProps) => {
     e.preventDefault();
     setContextMenu({ show: true, x: e.clientX, y: e.clientY });
   };
-  const closeContextMenuHandler = (e: React.MouseEvent<HTMLDivElement>) => {
-    e.preventDefault();
+  const closeContextMenuHandler = () => {
     setContextMenu({ show: false, x: 0, y: 0 });
   };
   const contextAreaRef = useRef<HTMLDivElement>(null);
