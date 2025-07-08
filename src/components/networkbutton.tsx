@@ -5,14 +5,7 @@ export const NetworkButton = () => (
     type="button"
     aria-label="Network status"
     className="
-      p-1
-      rounded-md
-      hover:bg-gray-200
-      focus:outline-none
-      focus:ring-2
-      focus:ring-gray-400
-      transition-colors
-      flex items-center justify-center
+      group flex items-center justify-center w-12 h-full hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 relative
     "
   >
     <img
@@ -20,7 +13,8 @@ export const NetworkButton = () => (
       alt="Network status"
       width={20}
       height={20}
-      className="w-5 h-5 image-rendering-pixelated block group-hover:hidden" 
+      className="w-9 h-9 image-rendering-pixelated block" 
+      style={{ imageRendering: 'pixelated' }}
       draggable={false} 
     />
   </button>
