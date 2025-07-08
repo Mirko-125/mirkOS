@@ -1,5 +1,5 @@
 import './globals.css';
-import { Wallpaper } from '@/components/wallpaper';
+import { Wallpaper } from '@/components/wallpaper'; // client component
 import { Taskbar } from '@/components/taskbar';
 
 export const metadata = {

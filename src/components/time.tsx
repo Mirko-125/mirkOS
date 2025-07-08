@@ -10,7 +10,7 @@ const Time = () => {
     return () => clearInterval(timerId);
   }, []);
 
-  const formattedTime = time.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+  const formattedTime = time.toLocaleTimeString([], { hour: "numeric", minute: "2-digit", second: "2-digit" });
 
   return (
     <time dateTime={time.toISOString()} className="font-mono text-sm select-none" aria-label="Current time">

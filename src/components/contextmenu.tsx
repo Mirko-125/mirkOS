@@ -3,8 +3,8 @@ import React, { ReactNode, RefObject, useEffect } from 'react';
 interface ContextMenuProps {
     x : number;
     y : number;
-    onCloseContextMenu: () => void; 
-    parentRef: RefObject<HTMLElement>; 
+    onCloseContextMenu: (e: React.MouseEvent<HTMLDivElement>) => void; 
+    parentRef: RefObject<HTMLDivElement | null>; 
     children: ReactNode; 
 }
 
