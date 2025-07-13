@@ -1,7 +1,7 @@
 import "./globals.css";
-import { ContextMenuWrap } from "@/components/contextmenuwrap"; // client component
-import { Wallpaper } from "@/components/wallpaper";
-import { Taskbar } from "@/components/taskbar";
+import { ContextMenuWrap } from "@/components/essential/contextmenuwrap"; // client component
+import { Wallpaper } from "@/components/essential/wallpaper";
+import { Taskbar } from "@/components/essential/taskbar";
 
 export const metadata = {
   title: "mirkOS",

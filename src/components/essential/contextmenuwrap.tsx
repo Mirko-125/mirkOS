@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, ReactNode } from "react";
-import { ContextMenu } from "@/components/contextmenu"; // client compontent
+import { ContextMenu } from "@/components/essential/contextmenu"; // client compontent
 interface ContextMenuState {
   show: boolean;
   x: number;
