@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useRef, ReactNode } from "react";
-import { ContextMenu } from "@/components/essential/contextmenu"; // client compontent
+import { ContextMenu } from "@/components/essential/contextmenu";
+import { ContextMenuItem } from "@/components/essential/contextmenuitem";
+import palleteIcon from "@/assets/pallete.png";
 interface ContextMenuState {
   show: boolean;
   x: number;
@@ -43,7 +45,17 @@ export const ContextMenuWrap = (props: ChildrenProp) => {
           onCloseContextMenu={closeContextMenuHandler}
           parentRef={contextAreaRef}
         >
-          This is my context menu
+          <div className="bg-[#f1f1f1] border border-[#0054e3] shadow-lg min-w-[180px]">
+            <ContextMenuItem
+              icon={palleteIcon.src}
+              label="Change wallpaper colour"
+              onClick={() => {
+                alert("Context menu button clicked!");
+                closeContextMenuHandler();
+              }}
+            />
+            <hr className="border-[#dfdfdf] mx-2" />
+          </div>
         </ContextMenu>
       )}
     </div>
